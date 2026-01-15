@@ -2,6 +2,7 @@ package com.example.listycity;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
@@ -32,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
         cityAdapter = new ArrayAdapter<>(this, R.layout.content, dataList);
         cityList.setAdapter(cityAdapter);
+
+        Button btnAdd = findViewById(R.id.btnAdd);
+        Button btnRemove = findViewById(R.id.btnRemove);
+
+        btnAdd.setOnClickListener(this);
+        btnRemove.setOnClickListener(this);
 
     }
 }

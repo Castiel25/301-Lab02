@@ -9,31 +9,33 @@
 
     <Button
         android:id="@+id/btnAdd"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="ADD CITY"
         android:textSize="40sp"
+        android:backgroundTint="#66FF00"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btnRemove"
-        >
+        app:layout_constraintBottom_toTopOf="@+id/btnRemove">
 
     </Button>
 
     <Button
         android:id="@+id/btnRemove"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:text="REMOVE CITY"
         android:textSize="40sp"
+        android:backgroundTint="#f44336"
         app:layout_constraintTop_toBottomOf="@+id/btnAdd"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/city_list">
 
     </Button>
+
 
     <ListView
         android:id="@+id/city_list"
