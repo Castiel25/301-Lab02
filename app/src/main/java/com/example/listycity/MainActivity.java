@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         new AlertDialog.Builder(this)
                 .setTitle("ADDING CITY")
                 .setView(input)
-                .setPositiveButton("ADD", (d, w) -> {
+                .setPositiveButton("CONFIRM", (d, w) -> {
                     String newCity = input.getText().toString().trim();
                     // Check for empty input
                     if (newCity.isEmpty()){
