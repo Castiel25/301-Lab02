@@ -6,5 +6,5 @@
     android:padding="15dp"
     android:text="@string/sample_text"
     android:textSize="40sp">
-
 </TextView>
+

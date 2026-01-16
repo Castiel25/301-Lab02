@@ -8,19 +8,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 // AndroidStudio suggested the fix "implements OnClickListener"
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
-
     ListView cityList;
     ArrayAdapter<String> cityAdapter;
     ArrayList<String> dataList;
@@ -52,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this , "SELECTED: " + clicked.toUpperCase(), Toast.LENGTH_SHORT).show();
         });
     }
+
     // followed the LAB demo and instructions from "Build Your First Android App in Java"
     public void onClick(View v){
         int id = v.getId();
@@ -86,7 +79,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         }
                     }
                     dataList.add(newCity);
-
                     /*The following method is from OpenAI ChatGPT,"if I update a datalist in the Java studio(java),
                      why isn't my Listview changes?"*/
                     cityAdapter.notifyDataSetChanged();
